@@ -1,0 +1,36 @@
+version: "3"
+services:
+
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dimebot
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      backend:
+          aliases:
+            - dimebot-mysql
+
+  dimebot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: /bin/sh -c 'npm run prod'
+    image: dimebot
+    ports:
+      - "3010:3000"
+    depends_on:
+      - database
+    networks:
+      - backend
+    volumes:
+      - .:/var/www/
+
+volumes:
+  db-data:
+
+networks:
+  backend:

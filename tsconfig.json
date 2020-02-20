@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "strict": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests",
+    "dist",
+    "**/*test.ts"
+  ]
+}
