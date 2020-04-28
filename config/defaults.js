@@ -7,9 +7,9 @@ if (admins[0] === '') {
 }
 
 const currency = {
-  name: 'dime',
-  plural: 'dimes',
-  emoji: ':dime:',
+  name: 'sly cat',
+  plural: 'sly cats',
+  emoji: ':sly_cat:',
   milestone: 100,
 };
 
