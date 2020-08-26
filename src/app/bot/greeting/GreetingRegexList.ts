@@ -13,6 +13,7 @@ const sharedGreetings = [
   'onya',
   'cheers( mate(s?)?)?',
   'ta',
+  'thx',
   'you beaut',
   'good on ya( mate(s?)?)?',
   'tha?n?x( to)?',
