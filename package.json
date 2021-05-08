@@ -41,7 +41,7 @@
     "lodash": "^4.17.15",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.22",
+    "typeorm": "^0.2.25",
     "winston": "^2.4.4"
   }
 }
